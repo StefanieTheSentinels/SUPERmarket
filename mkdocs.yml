@@ -1,0 +1,6 @@
+site_name: SUPERmarket
+
+docs_dir: ./
+
+theme:
+  name: material
