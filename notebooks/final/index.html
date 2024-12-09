@@ -1,0 +1,1845 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+    
+    
+      
+        <title>Supermarket python project - SUPERmarket</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#supermarket-python-project" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="SUPERmarket" class="md-header__button md-logo" aria-label="SUPERmarket" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SUPERmarket
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Supermarket python project
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SUPERmarket" class="md-nav__button md-logo" aria-label="SUPERmarket" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SUPERmarket
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SuperMarket dataset analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Notebooks
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Notebooks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Supermarket python project
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Supermarket python project
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#importing-all-needful-libraries-and-csv-file-with-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importing all needful libraries and csv file with data
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#importing-all-needful-libraries-and-csv-file-with-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importing all needful libraries and csv file with data
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="supermarket-python-project">Supermarket python project</h1>
+<h4 id="importing-all-needful-libraries-and-csv-file-with-data">Importing all needful libraries and csv file with data</h4>
+<pre><code class="language-python">import pandas as pd
+import math
+import plotly.express as px
+import plotly.graph_objects as go
+
+
+sales = pd.read_csv('supermarket_sales - Sheet1.csv', header=0)
+sales
+</code></pre>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Invoice ID</th>
+      <th>Branch</th>
+      <th>City</th>
+      <th>Customer type</th>
+      <th>Gender</th>
+      <th>Product line</th>
+      <th>Unit price</th>
+      <th>Quantity</th>
+      <th>Tax 5%</th>
+      <th>Total</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Payment</th>
+      <th>cogs</th>
+      <th>gross margin percentage</th>
+      <th>gross income</th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>750-67-8428</td>
+      <td>A</td>
+      <td>Yangon</td>
+      <td>Member</td>
+      <td>Female</td>
+      <td>Health and beauty</td>
+      <td>74.69</td>
+      <td>7</td>
+      <td>26.1415</td>
+      <td>548.9715</td>
+      <td>1/5/2019</td>
+      <td>13:08</td>
+      <td>Ewallet</td>
+      <td>522.83</td>
+      <td>4.761905</td>
+      <td>26.1415</td>
+      <td>9.1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>226-31-3081</td>
+      <td>C</td>
+      <td>Naypyitaw</td>
+      <td>Normal</td>
+      <td>Female</td>
+      <td>Electronic accessories</td>
+      <td>15.28</td>
+      <td>5</td>
+      <td>3.8200</td>
+      <td>80.2200</td>
+      <td>3/8/2019</td>
+      <td>10:29</td>
+      <td>Cash</td>
+      <td>76.40</td>
+      <td>4.761905</td>
+      <td>3.8200</td>
+      <td>9.6</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>631-41-3108</td>
+      <td>A</td>
+      <td>Yangon</td>
+      <td>Normal</td>
+      <td>Male</td>
+      <td>Home and lifestyle</td>
+      <td>46.33</td>
+      <td>7</td>
+      <td>16.2155</td>
+      <td>340.5255</td>
+      <td>3/3/2019</td>
+      <td>13:23</td>
+      <td>Credit card</td>
+      <td>324.31</td>
+      <td>4.761905</td>
+      <td>16.2155</td>
+      <td>7.4</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>123-19-1176</td>
+      <td>A</td>
+      <td>Yangon</td>
+      <td>Member</td>
+      <td>Male</td>
+      <td>Health and beauty</td>
+      <td>58.22</td>
+      <td>8</td>
+      <td>23.2880</td>
+      <td>489.0480</td>
+      <td>1/27/2019</td>
+      <td>20:33</td>
+      <td>Ewallet</td>
+      <td>465.76</td>
+      <td>4.761905</td>
+      <td>23.2880</td>
+      <td>8.4</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>373-73-7910</td>
+      <td>A</td>
+      <td>Yangon</td>
+      <td>Normal</td>
+      <td>Male</td>
+      <td>Sports and travel</td>
+      <td>86.31</td>
+      <td>7</td>
+      <td>30.2085</td>
+      <td>634.3785</td>
+      <td>2/8/2019</td>
+      <td>10:37</td>
+      <td>Ewallet</td>
+      <td>604.17</td>
+      <td>4.761905</td>
+      <td>30.2085</td>
+      <td>5.3</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>995</th>
+      <td>233-67-5758</td>
+      <td>C</td>
+      <td>Naypyitaw</td>
+      <td>Normal</td>
+      <td>Male</td>
+      <td>Health and beauty</td>
+      <td>40.35</td>
+      <td>1</td>
+      <td>2.0175</td>
+      <td>42.3675</td>
+      <td>1/29/2019</td>
+      <td>13:46</td>
+      <td>Ewallet</td>
+      <td>40.35</td>
+      <td>4.761905</td>
+      <td>2.0175</td>
+      <td>6.2</td>
+    </tr>
+    <tr>
+      <th>996</th>
+      <td>303-96-2227</td>
+      <td>B</td>
+      <td>Mandalay</td>
+      <td>Normal</td>
+      <td>Female</td>
+      <td>Home and lifestyle</td>
+      <td>97.38</td>
+      <td>10</td>
+      <td>48.6900</td>
+      <td>1022.4900</td>
+      <td>3/2/2019</td>
+      <td>17:16</td>
+      <td>Ewallet</td>
+      <td>973.80</td>
+      <td>4.761905</td>
+      <td>48.6900</td>
+      <td>4.4</td>
+    </tr>
+    <tr>
+      <th>997</th>
+      <td>727-02-1313</td>
+      <td>A</td>
+      <td>Yangon</td>
+      <td>Member</td>
+      <td>Male</td>
+      <td>Food and beverages</td>
+      <td>31.84</td>
+      <td>1</td>
+      <td>1.5920</td>
+      <td>33.4320</td>
+      <td>2/9/2019</td>
+      <td>13:22</td>
+      <td>Cash</td>
+      <td>31.84</td>
+      <td>4.761905</td>
+      <td>1.5920</td>
+      <td>7.7</td>
+    </tr>
+    <tr>
+      <th>998</th>
+      <td>347-56-2442</td>
+      <td>A</td>
+      <td>Yangon</td>
+      <td>Normal</td>
+      <td>Male</td>
+      <td>Home and lifestyle</td>
+      <td>65.82</td>
+      <td>1</td>
+      <td>3.2910</td>
+      <td>69.1110</td>
+      <td>2/22/2019</td>
+      <td>15:33</td>
+      <td>Cash</td>
+      <td>65.82</td>
+      <td>4.761905</td>
+      <td>3.2910</td>
+      <td>4.1</td>
+    </tr>
+    <tr>
+      <th>999</th>
+      <td>849-09-3807</td>
+      <td>A</td>
+      <td>Yangon</td>
+      <td>Member</td>
+      <td>Female</td>
+      <td>Fashion accessories</td>
+      <td>88.34</td>
+      <td>7</td>
+      <td>30.9190</td>
+      <td>649.2990</td>
+      <td>2/18/2019</td>
+      <td>13:28</td>
+      <td>Cash</td>
+      <td>618.38</td>
+      <td>4.761905</td>
+      <td>30.9190</td>
+      <td>6.6</td>
+    </tr>
+  </tbody>
+</table>
+<p>1000 rows × 17 columns</p>
+</div>
+
+<h1 id="descriptive-statistics">Descriptive statistics</h1>
+<h4 id="there-is-mean-and-standart-deviation-of-different-fields">There is mean and standart deviation of different fields</h4>
+<pre><code class="language-python">sales.describe()
+</code></pre>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unit price</th>
+      <th>Quantity</th>
+      <th>Tax 5%</th>
+      <th>Total</th>
+      <th>cogs</th>
+      <th>gross margin percentage</th>
+      <th>gross income</th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>1000.000000</td>
+      <td>1000.000000</td>
+      <td>1000.000000</td>
+      <td>1000.000000</td>
+      <td>1000.00000</td>
+      <td>1000.000000</td>
+      <td>1000.000000</td>
+      <td>1000.00000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>55.672130</td>
+      <td>5.510000</td>
+      <td>15.379369</td>
+      <td>322.966749</td>
+      <td>307.58738</td>
+      <td>4.761905</td>
+      <td>15.379369</td>
+      <td>6.97270</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>26.494628</td>
+      <td>2.923431</td>
+      <td>11.708825</td>
+      <td>245.885335</td>
+      <td>234.17651</td>
+      <td>0.000000</td>
+      <td>11.708825</td>
+      <td>1.71858</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>10.080000</td>
+      <td>1.000000</td>
+      <td>0.508500</td>
+      <td>10.678500</td>
+      <td>10.17000</td>
+      <td>4.761905</td>
+      <td>0.508500</td>
+      <td>4.00000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>32.875000</td>
+      <td>3.000000</td>
+      <td>5.924875</td>
+      <td>124.422375</td>
+      <td>118.49750</td>
+      <td>4.761905</td>
+      <td>5.924875</td>
+      <td>5.50000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>55.230000</td>
+      <td>5.000000</td>
+      <td>12.088000</td>
+      <td>253.848000</td>
+      <td>241.76000</td>
+      <td>4.761905</td>
+      <td>12.088000</td>
+      <td>7.00000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>77.935000</td>
+      <td>8.000000</td>
+      <td>22.445250</td>
+      <td>471.350250</td>
+      <td>448.90500</td>
+      <td>4.761905</td>
+      <td>22.445250</td>
+      <td>8.50000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>99.960000</td>
+      <td>10.000000</td>
+      <td>49.650000</td>
+      <td>1042.650000</td>
+      <td>993.00000</td>
+      <td>4.761905</td>
+      <td>49.650000</td>
+      <td>10.00000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h4 id="median-of-different-columns">Median of different columns</h4>
+<pre><code class="language-python">print(sales.Quantity.median())
+print(sales.Rating.median())
+print(int(sales.Total.median()))
+</code></pre>
+<pre><code>5.0
+7.0
+253
+</code></pre>
+<h4 id="looking-at-columns-in-detail">Looking at columns in detail</h4>
+<pre><code class="language-python">columns_names = list(sales.columns)
+columns = pd.DataFrame(columns_names, columns = ['Names of columns'])
+columns
+</code></pre>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Names of columns</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Invoice ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Branch</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>City</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Customer type</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Gender</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Product line</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Unit price</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Quantity</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Tax 5%</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Total</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Date</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Time</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Payment</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>cogs</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>gross margin percentage</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>gross income</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Rating</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h5 id="looking-on-different-product-lines-presented-in-dataset">Looking on different product lines presented in dataset</h5>
+<pre><code class="language-python">d = pd.DataFrame(set(list(sales['Product line'])))
+d
+</code></pre>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Food and beverages</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Electronic accessories</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Fashion accessories</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Sports and travel</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Health and beauty</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Home and lifestyle</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h1 id="data-cleanup">Data cleanup</h1>
+<h4 id="checking-for-zero-and-nan-elements">Checking for zero and "NaN" elements</h4>
+<pre><code class="language-python">sales.count()
+</code></pre>
+<pre><code>Invoice ID                 1000
+Branch                     1000
+City                       1000
+Customer type              1000
+Gender                     1000
+Product line               1000
+Unit price                 1000
+Quantity                   1000
+Tax 5%                     1000
+Total                      1000
+Date                       1000
+Time                       1000
+Payment                    1000
+cogs                       1000
+gross margin percentage    1000
+gross income               1000
+Rating                     1000
+dtype: int64
+</code></pre>
+<p>Therefore there is no such elements </p>
+<h4 id="format-column-names">Format column names</h4>
+<pre><code class="language-python">sales['Total'] = sales['Total'].apply(lambda x: round(x, 2))
+sales['gross income'] = sales['gross income'].apply(lambda x: round(x, 2))
+sales = sales.drop(['Invoice ID', 'Tax 5%', 'Branch', 'gross margin percentage', 'cogs'], axis = 1)
+sales.rename(columns={'gross income': 'Gross income'}, inplace=True)
+sales
+</code></pre>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>City</th>
+      <th>Customer type</th>
+      <th>Gender</th>
+      <th>Product line</th>
+      <th>Unit price</th>
+      <th>Quantity</th>
+      <th>Total</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Payment</th>
+      <th>Gross income</th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Yangon</td>
+      <td>Member</td>
+      <td>Female</td>
+      <td>Health and beauty</td>
+      <td>74.69</td>
+      <td>7</td>
+      <td>548.97</td>
+      <td>1/5/2019</td>
+      <td>13:08</td>
+      <td>Ewallet</td>
+      <td>26.14</td>
+      <td>9.1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Naypyitaw</td>
+      <td>Normal</td>
+      <td>Female</td>
+      <td>Electronic accessories</td>
+      <td>15.28</td>
+      <td>5</td>
+      <td>80.22</td>
+      <td>3/8/2019</td>
+      <td>10:29</td>
+      <td>Cash</td>
+      <td>3.82</td>
+      <td>9.6</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Yangon</td>
+      <td>Normal</td>
+      <td>Male</td>
+      <td>Home and lifestyle</td>
+      <td>46.33</td>
+      <td>7</td>
+      <td>340.53</td>
+      <td>3/3/2019</td>
+      <td>13:23</td>
+      <td>Credit card</td>
+      <td>16.22</td>
+      <td>7.4</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Yangon</td>
+      <td>Member</td>
+      <td>Male</td>
+      <td>Health and beauty</td>
+      <td>58.22</td>
+      <td>8</td>
+      <td>489.05</td>
+      <td>1/27/2019</td>
+      <td>20:33</td>
+      <td>Ewallet</td>
+      <td>23.29</td>
+      <td>8.4</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Yangon</td>
+      <td>Normal</td>
+      <td>Male</td>
+      <td>Sports and travel</td>
+      <td>86.31</td>
+      <td>7</td>
+      <td>634.38</td>
+      <td>2/8/2019</td>
+      <td>10:37</td>
+      <td>Ewallet</td>
+      <td>30.21</td>
+      <td>5.3</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>995</th>
+      <td>Naypyitaw</td>
+      <td>Normal</td>
+      <td>Male</td>
+      <td>Health and beauty</td>
+      <td>40.35</td>
+      <td>1</td>
+      <td>42.37</td>
+      <td>1/29/2019</td>
+      <td>13:46</td>
+      <td>Ewallet</td>
+      <td>2.02</td>
+      <td>6.2</td>
+    </tr>
+    <tr>
+      <th>996</th>
+      <td>Mandalay</td>
+      <td>Normal</td>
+      <td>Female</td>
+      <td>Home and lifestyle</td>
+      <td>97.38</td>
+      <td>10</td>
+      <td>1022.49</td>
+      <td>3/2/2019</td>
+      <td>17:16</td>
+      <td>Ewallet</td>
+      <td>48.69</td>
+      <td>4.4</td>
+    </tr>
+    <tr>
+      <th>997</th>
+      <td>Yangon</td>
+      <td>Member</td>
+      <td>Male</td>
+      <td>Food and beverages</td>
+      <td>31.84</td>
+      <td>1</td>
+      <td>33.43</td>
+      <td>2/9/2019</td>
+      <td>13:22</td>
+      <td>Cash</td>
+      <td>1.59</td>
+      <td>7.7</td>
+    </tr>
+    <tr>
+      <th>998</th>
+      <td>Yangon</td>
+      <td>Normal</td>
+      <td>Male</td>
+      <td>Home and lifestyle</td>
+      <td>65.82</td>
+      <td>1</td>
+      <td>69.11</td>
+      <td>2/22/2019</td>
+      <td>15:33</td>
+      <td>Cash</td>
+      <td>3.29</td>
+      <td>4.1</td>
+    </tr>
+    <tr>
+      <th>999</th>
+      <td>Yangon</td>
+      <td>Member</td>
+      <td>Female</td>
+      <td>Fashion accessories</td>
+      <td>88.34</td>
+      <td>7</td>
+      <td>649.30</td>
+      <td>2/18/2019</td>
+      <td>13:28</td>
+      <td>Cash</td>
+      <td>30.92</td>
+      <td>6.6</td>
+    </tr>
+  </tbody>
+</table>
+<p>1000 rows × 12 columns</p>
+</div>
+
+<h1 id="plots">Plots</h1>
+<h4 id="amount-of-products-by-each-product-line">Amount of products by each product line</h4>
+<pre><code class="language-python">dfk = sales.groupby(&quot;Product line&quot;)['Quantity'].sum()
+dfk = pd.DataFrame(dfk)
+dfk.reset_index(inplace=True)
+dfk = dfk.sort_values('Quantity', ascending=True, ignore_index=True)
+fig = px.bar(dfk, x='Product line', y='Quantity')
+fig.show()
+</code></pre>
+<h4 id="product-line-comparison-to-unit-price">Product line comparison to unit price</h4>
+<pre><code class="language-python">fig=px.box(sales,x='Product line',color='Product line',y='Unit price')
+fig.show()
+</code></pre>
+<h4 id="amount-of-total-sum-of-purchases-by-product-lined">Amount of total sum of purchases by product lined</h4>
+<pre><code class="language-python">df = pd.DataFrame({'Line': sales['Product line'], 'City': sales['City'], 'Total': sales['Total']})
+df = pd.DataFrame(df.groupby('Line')['Total'].sum())
+fig = px.bar(df.reset_index(), x='Line', y='Total')
+fig.show()
+</code></pre>
+<h4 id="amount-of-total-sum-of-purchases-by-city">Amount of total sum of purchases by city</h4>
+<pre><code class="language-python">df = pd.DataFrame({'line': sales['Product line'], 'City': sales['City'], 'Total': sales['Total']})
+df = pd.DataFrame(df.groupby('City')['Total'].sum())
+fig = px.bar(df.reset_index(), x='City', y='Total')
+fig.show()
+</code></pre>
+<h4 id="rating-by-time-of-purchases">Rating by time of purchases</h4>
+<pre><code class="language-python">sale = pd.DataFrame({'Time': sales['Time'], 'Rating': sales['Rating'], 'Total': sales['Total']})
+sale = sale.sort_values('Time')
+fig = px.scatter(sale, x=&quot;Time&quot;, y=&quot;Rating&quot;)
+fig.show()
+</code></pre>
+<h4 id="total-sum-of-purchases-by-time-of-purchases">Total sum of purchases by time of purchases</h4>
+<pre><code class="language-python">fig = px.scatter(sale, x=&quot;Time&quot;, y=&quot;Total&quot;)
+fig.show()
+</code></pre>
+<h4 id="relation-of-payment-methods-and-total-sum-of-purchases">Relation of payment methods and total sum of purchases</h4>
+<pre><code class="language-python">fig1 = px.pie(sales, names='Payment', values='Total')
+fig1.show()
+</code></pre>
+<h4 id="relation-between-membership-and-total-sum-of-purchases-and-rating">Relation between membership and total sum of purchases and rating</h4>
+<pre><code class="language-python">fig = px.pie(sales, values=&quot;Total&quot;, names=&quot;Customer type&quot;)
+fig.show()
+</code></pre>
+<pre><code class="language-python">fig = px.pie(sales, values=&quot;Rating&quot;, names=&quot;Customer type&quot;)
+fig.show()
+</code></pre>
+<h1 id="detailed-overview">Detailed overview</h1>
+<h4 id="what-product-line-gives-more-total-sum-of-products-and-in-what-city">What product line gives more total sum of products and in what city</h4>
+<pre><code class="language-python">df = pd.DataFrame({'line': sales['Product line'], 'city': sales['City'], 'total': sales['Total']})
+df = df.sort_values(by='city', ignore_index=True)
+fig = px.sunburst(df, path=['city', 'line'], values='total')
+fig.update_layout(margin = dict(t=1, l=1, r=1, b=1))
+fig.show()
+
+</code></pre>
+<h4 id="membershiping-by-sex">Membershiping by sex</h4>
+<pre><code class="language-python">df = pd.DataFrame({'sex': sales['Gender'], 'Customer type': sales['Customer type']})
+male_member = 0
+male_notmem = 0
+female_member = 0
+female_notmem = 0
+df_sorted = df.sort_values(by='sex', ascending=False)
+#count male member/not member
+for i in range(501):    
+    if df_sorted.iloc[i, 1] == 'Member':
+        male_member += 1
+    else:
+        male_notmem += 1
+for i in range(501, 1000):    
+    if df_sorted.iloc[i, 1] == 'Member':
+        female_member += 1
+    else:
+        female_notmem += 1
+df1 = pd.DataFrame({'male': [male_member, male_notmem] , 'female': [female_member, female_notmem], 'membership': ['member', 'not_member']})
+
+df_transformed = df1.melt(id_vars='membership', var_name='sex', value_name='count')
+fig = px.bar(df_transformed, x='sex', y='count', color='membership', barmode='group', height=350)
+fig.show()
+</code></pre>
+<h4 id="total-sum-and-it-dependence-of-date-time-and-city">Total sum and it dependence of date, time and city</h4>
+<pre><code class="language-python">ndf = pd.DataFrame({'date': sales['Date'], 'time': sales['Time'], 'city': sales['City'], 'total': sales['Total']})
+ndf = ndf.sort_values(['date', 'time'], ignore_index=True, ascending=True)
+fig = px.scatter_3d(ndf, x='date', y='time', z='total',
+              color='city', size_max=18,
+              symbol='city', opacity=0.7)
+
+# tight layout
+fig.update_layout(margin=dict(l=0, r=0, b=0, t=0))
+fig.show()
+</code></pre>
+<p>We can note that there are interesting trendline each city</p>
+<p>Lets look more datailed on them</p>
+<h4 id="mandalay">Mandalay</h4>
+<pre><code class="language-python">
+ndf = ndf[ndf['city'] == 'Mandalay']
+ndf = ndf.sort_values(['date', 'time'], ignore_index=True, ascending=True)
+fig = px.scatter_3d(
+    ndf,
+    x='date',
+    y='time',
+    z='total',
+    color='city',
+    size_max=18,
+    symbol='city',
+    opacity=0.7
+)
+fig.update_layout(margin=dict(l=0, r=0, b=0, t=0))
+fig.show()
+</code></pre>
+<pre><code class="language-python">fig = px.scatter(ndf, x=&quot;time&quot;, y=&quot;date&quot;)
+fig.show()
+</code></pre>
+<pre><code class="language-python">ndf = ndf.sort_values(['time', 'date'], ignore_index=True, ascending=True)
+fig = px.scatter(ndf, x=&quot;time&quot;, y=&quot;date&quot;)
+fig.show()
+</code></pre>
+<h4 id="yangon">Yangon</h4>
+<pre><code class="language-python">ndf = pd.DataFrame({'date': sales['Date'], 'time': sales['Time'], 'city': sales['City'], 'total': sales['Total']})
+ndf = ndf[ndf['city'] == 'Yangon']
+ndf = ndf.sort_values(['date', 'time'], ignore_index=True, ascending=True)
+fig = px.scatter_3d(
+    ndf,
+    x='date',
+    y='time',
+    z='total',
+    color='city',
+    size_max=18,
+    symbol='city',
+    opacity=0.7
+)
+fig.update_layout(margin=dict(l=0, r=0, b=0, t=0))
+fig.show()
+</code></pre>
+<pre><code class="language-python">ndf = ndf.sort_values(['date', 'time'], ignore_index=True, ascending=True)
+
+fig = px.scatter(ndf, x=&quot;time&quot;, y=&quot;date&quot;)
+fig.show()
+</code></pre>
+<pre><code class="language-python">ndf = ndf.sort_values(['time', 'date'], ignore_index=True, ascending=True)
+fig = px.scatter(ndf, x=&quot;time&quot;, y=&quot;date&quot;)
+fig.show()
+</code></pre>
+<h4 id="naypyitaw">Naypyitaw</h4>
+<pre><code class="language-python">ndf = pd.DataFrame({'date': sales['Date'], 'time': sales['Time'], 'city': sales['City'], 'total': sales['Total']})
+ndf = ndf[ndf['city'] == 'Naypyitaw']
+ndf = ndf.sort_values(['date', 'time'], ignore_index=True, ascending=True)
+fig = px.scatter_3d(
+    ndf,
+    x='date',
+    y='time',
+    z='total',
+    color='city',
+    size_max=18,
+    symbol='city',
+    opacity=0.7
+)
+fig.update_layout(margin=dict(l=0, r=0, b=0, t=0))
+fig.show()
+</code></pre>
+<pre><code class="language-python">ndf = ndf.sort_values(['date', 'time'], ignore_index=True, ascending=True)
+
+fig = px.scatter(ndf, x=&quot;time&quot;, y=&quot;date&quot;)
+fig.show()
+</code></pre>
+<pre><code class="language-python">ndf = ndf.sort_values(['time', 'date'], ignore_index=True, ascending=True)
+fig = px.scatter(ndf, x=&quot;time&quot;, y=&quot;date&quot;)
+fig.show()
+</code></pre>
+<p><strong>Overall, we can notice similar graph trends for each city</strong>
+This may be due to different factors: working hours, growing popularity of the supermarket and etc.</p>
+<h4 id="average-total-sum-in-half-hours">Average total sum in half hours</h4>
+<pre><code class="language-python">data = []
+
+for i in range(10, 21):
+    first_halfhour = generate_time_list(i, 0, i, 29)
+    sec_halfhour = generate_time_list(i, 30, i, 59)
+
+    total_f = total_s = cnt = cnto = 0
+
+    for j in range(1000):
+        if dfr['time'].iloc[j] in first_halfhour:
+            cnt += 1
+            total_f += int(dfr['total'].iloc[j])
+
+        if dfr['time'].iloc[j] in sec_halfhour:
+            cnto += 1
+            total_s += int(dfr['total'].iloc[j])
+
+    totalfi = round(total_f / cnt, 2) if cnt else 0
+    totalse = round(total_s / cnto, 2) if cnto else 0
+    data.append([f&quot;{str(i).zfill(2)}:00 - {str(i).zfill(2)}:29&quot;, totalfi])
+    data.append([f&quot;{str(i).zfill(2)}:30 - {str(i).zfill(2)}:59&quot;, totalse])
+
+# Create a DataFrame from the data
+df_result = pd.DataFrame(data, columns=['Time Range', 'Average Total'])
+df_result
+</code></pre>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Time Range</th>
+      <th>Average Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10:00 - 10:29</td>
+      <td>262.82</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>10:30 - 10:59</td>
+      <td>357.47</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>11:00 - 11:29</td>
+      <td>360.95</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>11:30 - 11:59</td>
+      <td>316.12</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>12:00 - 12:29</td>
+      <td>273.05</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>12:30 - 12:59</td>
+      <td>307.42</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>13:00 - 13:29</td>
+      <td>353.33</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>13:30 - 13:59</td>
+      <td>322.05</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>14:00 - 14:29</td>
+      <td>310.98</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>14:30 - 14:59</td>
+      <td>426.67</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>15:00 - 15:29</td>
+      <td>339.83</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>15:30 - 15:59</td>
+      <td>266.19</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>16:00 - 16:29</td>
+      <td>393.54</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>16:30 - 16:59</td>
+      <td>271.79</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>17:00 - 17:29</td>
+      <td>373.14</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>17:30 - 17:59</td>
+      <td>288.92</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>18:00 - 18:29</td>
+      <td>297.94</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>18:30 - 18:59</td>
+      <td>256.90</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>19:00 - 19:29</td>
+      <td>366.04</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>19:30 - 19:59</td>
+      <td>338.32</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>20:00 - 20:29</td>
+      <td>278.70</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>20:30 - 20:59</td>
+      <td>332.16</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Look at origin graph</p>
+<pre><code class="language-python">fig = px.scatter(sale, x=&quot;Time&quot;, y=&quot;Total&quot;)
+fig.show()
+</code></pre>
+<pre><code class="language-python">fig = px.line(df_result, x=&quot;Time Range&quot;, y=&quot;Average Total&quot;)
+fig.show()
+</code></pre>
+<h4 id="change-in-the-total-price-of-country-according-to-date">Change in the Total price of Country according to date</h4>
+<pre><code class="language-python">px.bar(sales, x='City',y='Total',color='City',animation_frame='Date',
+      animation_group=&quot;City&quot;, range_y=[0,1000])
+</code></pre>
+<h1 id="data-transformation">Data transformation</h1>
+<h4 id="creating-two-new-columns-of-different-interesting-ratios">Creating two new columns of different interesting ratios</h4>
+<pre><code class="language-python">sales['Price-rating ratio'] = sales['Total']/sales['Rating']
+sales['Price-rating ratio'] = sales['Price-rating ratio'].astype('int64')
+sales['Qnty/price'] = sales['Total']/sales['Quantity']
+sales['Qnty/price'] = sales['Qnty/price'].apply(lambda x: round(x, 2))
+sales
+
+</code></pre>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>City</th>
+      <th>Customer type</th>
+      <th>Gender</th>
+      <th>Product line</th>
+      <th>Unit price</th>
+      <th>Quantity</th>
+      <th>Total</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Payment</th>
+      <th>Gross income</th>
+      <th>Rating</th>
+      <th>Price-rating ratio</th>
+      <th>Qnty/price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Yangon</td>
+      <td>Member</td>
+      <td>Female</td>
+      <td>Health and beauty</td>
+      <td>74.69</td>
+      <td>7</td>
+      <td>548.97</td>
+      <td>1/5/2019</td>
+      <td>13:08</td>
+      <td>Ewallet</td>
+      <td>26.14</td>
+      <td>9.1</td>
+      <td>60</td>
+      <td>78.42</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Naypyitaw</td>
+      <td>Normal</td>
+      <td>Female</td>
+      <td>Electronic accessories</td>
+      <td>15.28</td>
+      <td>5</td>
+      <td>80.22</td>
+      <td>3/8/2019</td>
+      <td>10:29</td>
+      <td>Cash</td>
+      <td>3.82</td>
+      <td>9.6</td>
+      <td>8</td>
+      <td>16.04</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Yangon</td>
+      <td>Normal</td>
+      <td>Male</td>
+      <td>Home and lifestyle</td>
+      <td>46.33</td>
+      <td>7</td>
+      <td>340.53</td>
+      <td>3/3/2019</td>
+      <td>13:23</td>
+      <td>Credit card</td>
+      <td>16.22</td>
+      <td>7.4</td>
+      <td>46</td>
+      <td>48.65</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Yangon</td>
+      <td>Member</td>
+      <td>Male</td>
+      <td>Health and beauty</td>
+      <td>58.22</td>
+      <td>8</td>
+      <td>489.05</td>
+      <td>1/27/2019</td>
+      <td>20:33</td>
+      <td>Ewallet</td>
+      <td>23.29</td>
+      <td>8.4</td>
+      <td>58</td>
+      <td>61.13</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Yangon</td>
+      <td>Normal</td>
+      <td>Male</td>
+      <td>Sports and travel</td>
+      <td>86.31</td>
+      <td>7</td>
+      <td>634.38</td>
+      <td>2/8/2019</td>
+      <td>10:37</td>
+      <td>Ewallet</td>
+      <td>30.21</td>
+      <td>5.3</td>
+      <td>119</td>
+      <td>90.63</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>995</th>
+      <td>Naypyitaw</td>
+      <td>Normal</td>
+      <td>Male</td>
+      <td>Health and beauty</td>
+      <td>40.35</td>
+      <td>1</td>
+      <td>42.37</td>
+      <td>1/29/2019</td>
+      <td>13:46</td>
+      <td>Ewallet</td>
+      <td>2.02</td>
+      <td>6.2</td>
+      <td>6</td>
+      <td>42.37</td>
+    </tr>
+    <tr>
+      <th>996</th>
+      <td>Mandalay</td>
+      <td>Normal</td>
+      <td>Female</td>
+      <td>Home and lifestyle</td>
+      <td>97.38</td>
+      <td>10</td>
+      <td>1022.49</td>
+      <td>3/2/2019</td>
+      <td>17:16</td>
+      <td>Ewallet</td>
+      <td>48.69</td>
+      <td>4.4</td>
+      <td>232</td>
+      <td>102.25</td>
+    </tr>
+    <tr>
+      <th>997</th>
+      <td>Yangon</td>
+      <td>Member</td>
+      <td>Male</td>
+      <td>Food and beverages</td>
+      <td>31.84</td>
+      <td>1</td>
+      <td>33.43</td>
+      <td>2/9/2019</td>
+      <td>13:22</td>
+      <td>Cash</td>
+      <td>1.59</td>
+      <td>7.7</td>
+      <td>4</td>
+      <td>33.43</td>
+    </tr>
+    <tr>
+      <th>998</th>
+      <td>Yangon</td>
+      <td>Normal</td>
+      <td>Male</td>
+      <td>Home and lifestyle</td>
+      <td>65.82</td>
+      <td>1</td>
+      <td>69.11</td>
+      <td>2/22/2019</td>
+      <td>15:33</td>
+      <td>Cash</td>
+      <td>3.29</td>
+      <td>4.1</td>
+      <td>16</td>
+      <td>69.11</td>
+    </tr>
+    <tr>
+      <th>999</th>
+      <td>Yangon</td>
+      <td>Member</td>
+      <td>Female</td>
+      <td>Fashion accessories</td>
+      <td>88.34</td>
+      <td>7</td>
+      <td>649.30</td>
+      <td>2/18/2019</td>
+      <td>13:28</td>
+      <td>Cash</td>
+      <td>30.92</td>
+      <td>6.6</td>
+      <td>98</td>
+      <td>92.76</td>
+    </tr>
+  </tbody>
+</table>
+<p>1000 rows × 14 columns</p>
+</div>
+
+<h4 id="two-example-graph-using-new-columns">Two example graph using new columns</h4>
+<pre><code class="language-python">fig = px.pie(sales, values='Price-rating ratio', names='City')
+fig.show()
+</code></pre>
+<pre><code class="language-python">fig = px.bar(sales, x='Qnty/price', y='Product line')
+fig.show()
+</code></pre>
+<h1 id="hypothesis">Hypothesis</h1>
+<h4 id="city-and-customer-type-influence-total">City and customer type influence total</h4>
+<pre><code class="language-python">grouped_data = sales.groupby(['City', 'Customer type', 'Product line'])['Total'].sum().reset_index()
+
+# Create a faceted bar chart
+fig1 = px.bar(grouped_data, x='Product line', y='Total', color='Customer type',
+              facet_col='City')
+fig1.update_layout(height=400, width=1000)
+fig1.show()
+</code></pre>
+<p>In each city, normal customers consistently contribute more to total sales across all product lines, with significant variation in sales by product type.</p>
+<h4 id="higher-unit-prices-lead-to-lower-quantities-sold">Higher Unit Prices Lead to Lower Quantities Sold</h4>
+<pre><code class="language-python">fig1 = px.scatter(sales, x='Quantity', y='Unit price', trendline='lowess')
+fig1.show()
+</code></pre>
+<p>The flat trendline indicates no clear relationship between unit price and quantity sold, suggesting that price changes do not significantly impact sales quantity.</p>
+<h4 id="naypyitaw-has-more-total-sales-per-each-customer-type">Naypyitaw has more total sales per each customer type</h4>
+<pre><code class="language-python">city_customer_sales = sales.groupby(['City', 'Customer type'])['Total'].sum().reset_index()
+
+# Create a bar chart
+fig1 = px.bar(city_customer_sales, x='City', y='Total', color='Customer type')
+fig1.show()
+</code></pre>
+<p>Naypyitaw has the highest total sales for both member and normal customer types compared to Mandalay and Yangon</p>
+<h4 id="rating-is-not-infuenced-by-gross-income-total-and-payment-method">Rating is not infuenced by gross income, total and payment method</h4>
+<pre><code class="language-python">fig = px.scatter(sale, x=&quot;Total&quot;, y=&quot;Rating&quot;, trendline='lowess')
+fig.show()
+</code></pre>
+<p>The trendline is nearly flat, suggesting that the total sales amount does not significantly affect customer ratings.</p>
+<pre><code class="language-python">fig3 = px.scatter(sales, x='Gross income', y='Rating', trendline='lowess')
+fig3.show()
+
+
+</code></pre>
+<p>Similar to the previous plot, the trendline remains flat, indicating that gross income has little to no impact on customer ratings.</p>
+<pre><code class="language-python">fig4 = px.box(sales, x='Payment', y='Rating')
+fig4.show()
+</code></pre>
+<p>The ratings are similar across eWallet, cash, and credit card payment methods, with overlapping interquartile ranges.</p>
+<p><strong>The overall hypothesis that rating is not influenced by gross income, total sales, or payment method is supported by the data. Each graph consistently shows no significant correlation between these variables and customer ratings.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
