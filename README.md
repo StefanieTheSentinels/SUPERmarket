@@ -59,6 +59,3 @@ GitHub renders `.ipynb` files but strips interactive Plotly output. For the full
 5. **Data transformation** — derived ratios (`Price/Rating`, `Total/Quantity`).
 6. **Hypotheses** — tested against the data with supporting visualizations.
 
-## License
-
-MIT
